@@ -12,7 +12,7 @@ Java8, Spring-Boot, ReactJS, MongoDB, Docker
 - Run `npm install` and then `npm run`
 - React application will run on port 3000
 
-To access application : (https://localhost:3000/)
+To access application : (https://localhost:3000/) \
 Swagger Documentation: (http://localhost:8888/swagger-ui.html)
 
 ### DOCKER-COMPOSE:
