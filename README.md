@@ -12,8 +12,11 @@ Java8, Spring-Boot, ReactJS, MongoDB, Docker
 - Run `npm install` and then `npm run`
 - React application will run on port 3000
 
-To access application : (https://localhost:3000/) \
-Swagger Documentation: (http://localhost:8888/swagger-ui.html)
+## KNOW MORE:
+Installed application in aws EC2 instance. \
+Application: (http://ec2-18-116-85-48.us-east-2.compute.amazonaws.com:3000/) \
+RestAPI: (http://ec2-18-116-85-48.us-east-2.compute.amazonaws.com:8888/) \
+Swagger Documentation: (http://ec2-18-116-85-48.us-east-2.compute.amazonaws.com:8888/swagger-ui.html)
 
 ### DOCKER-COMPOSE:
 - Created docker images and a docker-compose file for all the servers (Frontend, API, Database(mongo:latest dockerhub image)
