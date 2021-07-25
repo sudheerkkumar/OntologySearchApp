@@ -1,0 +1,35 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  mymongo:
+    image: mongo
+    restart: always
+    container_name: "mymongo"
+    ports:
+      - 27017:27017
+    networks:
+      - mylocal
+  
+  ontology:
+    image: kancharlasudheerkumar/ontologyapi:v1
+    restart: always
+    container_name: "myapi"
+    ports:
+      - 8888:8888
+    networks:
+      - mylocal
+    depends_on:
+      - mymongo
+  
+  reactapp:
+    image: kancharlasudheerkumar/ontologyreactapp:v1
+    restart: always
+    container_name: "reactapp"
+    ports:
+      - 3000:3000
+    networks:
+      - mylocal
+networks:
+  mylocal:
