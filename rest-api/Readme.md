@@ -15,7 +15,7 @@ To run the rest api
 Swagger documentation: http://localhost:8888/swagger-ui.html
 
 ## ENDPOINTS:
-/ -> Home page
-/api/getOntology/{id} -> To get the Ontology by id.
-/api/create -> to create the ontology id. Expects JSON payload.
+- / -> Home page
+- /api/getOntology/{id} -> To get the Ontology by id.
+- /api/create -> to create the ontology id. Expects JSON payload.
 
